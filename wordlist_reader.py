@@ -4,4 +4,4 @@ def reader():
         for line in new_file:
             word_list.append(line.strip())
 
-        print(word_list)
+        return word_list

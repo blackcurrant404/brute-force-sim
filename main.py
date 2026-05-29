@@ -3,8 +3,7 @@ from wordlist_reader import reader
 
 def main():
     wordlist = reader()
-    result = engine()
-    print(result)
+    result = engine(wordlist)
 
 if __name__ == "__main__":
     main()
