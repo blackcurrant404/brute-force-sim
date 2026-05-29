@@ -5,7 +5,7 @@ def main():
     wordlist = reader()
     result = engine(wordlist)
 
-    if result == "":
+    if result is None:
         print("coudn't fint the password, try different wordlist")
     else:
         print("The correct password is", result)
