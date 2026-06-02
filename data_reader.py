@@ -9,4 +9,4 @@ def reader():
         for line in new_file:
             username_list.append(line.strip())
 
-        return word_list
+        return word_list, username_list

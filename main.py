@@ -2,8 +2,8 @@ from bruteforce_engine import engine
 from wordlist_reader import reader
 
 def main():
-    wordlist = reader()
-    result = engine(wordlist)
+    word_list, username_list = reader()
+    result = engine(word_list, username_list)
 
     if result is None:
         print("coudn't fint the password, try different wordlist")
