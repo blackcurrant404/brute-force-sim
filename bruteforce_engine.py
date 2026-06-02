@@ -1,12 +1,14 @@
-import sys
-import os
+from requests import request
 
-sys.path.append(os.path.abspath("../security-login-sim"))
-from verification import verify
+url = "http://127.0.0.1:5000/login"
 
 def engine(word_list: list):
-    for word in word_list:
-        if verify(word) == "Accepted":
-            return word
+    for password in word_list:
+        payload = {
+            "username": "root",
+            "password": password
+
+        }
+        request.post(url, data=payload)
 
     return None
