@@ -1,5 +1,5 @@
 from bruteforce_engine import engine
-from wordlist_reader import reader
+from data_reader import reader
 
 def main():
     word_list, username_list = reader()
