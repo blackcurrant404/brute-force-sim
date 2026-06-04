@@ -11,3 +11,8 @@ Program guesses passwords and try to find the correct one.
 - wordlist_reader -> reads the words from the txts
 - bruteforce_engine -> attacks the file
 - main -> structure and output
+
+
+Ideas for logging
+- JSON, txt, CSV, SQL? 
+- JSON best fro this project
