@@ -2,7 +2,9 @@ import json
 
 def save_results_to_json(result: dict):
     result = serializer(result)
-    result = json.dumps(result)
+    result_json = json.dumps(result)
+    with open("logs/result.json", "w") as new_file:
+        new_file.write(result_json)
     
 
 def serializer(result: dict):
