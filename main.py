@@ -1,14 +1,11 @@
 from bruteforce_engine import engine
 from data_reader import reader
+from reporter import save_results_to_json
 
 def main():
     word_list, username_list = reader()
     result = engine(word_list, username_list)
-
-    if result is None:
-        print("coudn't fint the password, try different wordlist")
-    else:
-        print("The correct password is", result)
+    save_results_to_json(result)
 
 if __name__ == "__main__":
     main()
