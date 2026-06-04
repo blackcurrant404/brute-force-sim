@@ -9,17 +9,20 @@ def main():
     save_results_to_json(result)
 
 if __name__ == "__main__":
-    save_results_to_json(
-        {
-            "pekka": {
-                "bool": True,
-                "password": "1234",
-                "timestamp": datetime.now()
-            },
-            "lauri": {
-                "bool": False,
-                "password": "popo",
-                "timestamp": datetime.now()
-            }
-            }
-    )
+
+    main()
+    if False:
+        save_results_to_json(
+            {
+                "pekka": {
+                    "bool": True,
+                    "password": "1234",
+                    "timestamp": datetime.now()
+                },
+                "lauri": {
+                    "bool": False,
+                    "password": "popo",
+                    "timestamp": datetime.now()
+                }
+                }
+        )
