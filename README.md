@@ -1,13 +1,10 @@
-# BRUTE FORCE SIMULATOR
+    # BRUTE FORCE SIMULATOR
 
-The program reads common passwords from a txt file and uses the verify function from the security-log-sim project to perform password attempts. It prints the result to the terminal.
+    The program reads usernames and common passwords from text files and uses HTTP requests to find valid credentials. 
 
-## Setup
+    It is meant to be used with my other project: security-login-sim, which is an HTTP-based mini server that handles authentication via HTTP requests.
 
-This project requires the `security-login-sim` project to be placed in the same parent directory as the brute force simulator.
+    Finally it stores results in a JSON file.
 
-Directory structure:
-
-security-lab/
-├── security_login_sim/
-└── brute_force_sim/
+    Disclaimer:
+    This project is intended for educational and testing purposes only. Use only with projects such as "security-login-sim" or on systems you have explicit permission to test.
